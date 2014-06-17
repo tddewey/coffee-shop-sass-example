@@ -1,0 +1,32 @@
+//
+// Variables
+//
+
+// This is a SASS map; a multidimensional array.
+// We are defining colors here, for use generically below
+$color-definitions: (
+	battlestar-red: #e1252c,
+	steel: #c0acae,
+	galaxy-rose: #e7545f,
+	galaxy-orange: #e9aa71,
+	galaxy-gray: #3d404d,
+	galaxy-dark-gray: darken( #3d404d, 10%),
+	very-light-gray: #fefefe,
+	light-gray: #efefef,
+	dark-gray: #444,
+);
+
+// Using a helper function, we're defining colors for use here
+$color-alt: tdd-color(battlestar-red);
+$color-link: tdd-color(battlestar-red);
+
+$color-text: tdd-color(galaxy-gray);
+$color-background: tdd-color(very-light-gray);
+
+// Antic slab is serif, Exo 2 is sans — both are from Google Fonts and loaded in <head>
+$font-family-headline: 'Antic Slab', Georgia, serif;
+$font-family-body: 'Exo 2', Exo, Futura, Helvetica Neue, Helvetica, Arial, sans-serif;
+
+$standard-font-size: 16px;
+$standard-margin: 16px;
+$content-width: 800px;

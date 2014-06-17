@@ -1,0 +1,15 @@
+// Non-printing
+@import 'global/functions';
+@import 'global/variables';
+@import 'global/mixins';
+@import 'global/placeholders';
+
+// Printing
+@import 'base/fonts';
+@import 'base/base';
+
+@import 'components/header';
+@import 'components/footer';
+@import 'components/menu';
+@import 'components/photos';
+@import 'components/starbucks';

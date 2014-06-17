@@ -1,0 +1,359 @@
+header[role=banner], footer[role=contentinfo], .photos, .starbucks {
+  margin: 0 -1000px;
+  padding: 0.5em 1000px; }
+
+header[role=banner] h1, header[role=banner] address, .photos h2 {
+  text-shadow: 0 0 4px #600d10;
+  color: #fff;
+  text-transform: uppercase; }
+
+.menu table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 48px 0; }
+  .menu table th {
+    text-align: left;
+    font-weight: 800; }
+  .menu table th,
+  .menu table td {
+    padding: 8px;
+    padding-left: 6%; }
+  .menu table th:first-child,
+  .menu table td:first-child {
+    padding-left: 0;
+    width: 50%;
+    text-align: right;
+    padding-right: 6%; }
+  .menu table td:first-child {
+    border-right: 1px solid #e9aa71; }
+  .menu table h3 {
+    display: inline;
+    margin: 0;
+    color: #e9aa71; }
+  .menu table th:last-child,
+  .menu table td:last-child {
+    padding-right: 0; }
+
+.photos ul {
+  padding: 0; }
+  .photos ul > li {
+    display: inline-block;
+    list-style-type: none; }
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("fonts/icomoon/fonts/icomoon.eot?-4rvc6i");
+  src: url("fonts/icomoon/fonts/icomoon.eot?#iefix-4rvc6i") format("embedded-opentype"), url("fonts/icomoon/fonts/icomoon.woff?-4rvc6i") format("woff"), url("fonts/icomoon/fonts/icomoon.ttf?-4rvc6i") format("truetype"), url("fonts/icomoon/fonts/icomoon.svg?-4rvc6i#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+.icon-book:before {
+  content: "\e604";
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  padding-right: .5em;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-image:before, .photos h2:before {
+  content: "\e607";
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  padding-right: .5em;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-coffee:before {
+  content: "\e603";
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  padding-right: .5em;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-time:before {
+  content: "\e606";
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  padding-right: .5em;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-twitter:before {
+  content: "\e602";
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  padding-right: .5em;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-pasta:before {
+  content: "\e601";
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  padding-right: .5em;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-smoking:before {
+  content: "\e600";
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  padding-right: .5em;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-mapmarker:before {
+  content: "\e604";
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  padding-right: .5em;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body, html {
+  overflow-x: hidden; }
+
+body {
+  color: #3d404d;
+  background-color: #fefefe;
+  padding: 0;
+  margin: 0;
+  font-family: "Exo 2", Exo, Futura, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 16px; }
+
+main {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto; }
+
+a {
+  color: #e1252c; }
+  a:hover {
+    color: #a36365; }
+
+h1, .h1 {
+  font-family: "Antic Slab", Georgia, serif;
+  font-weight: 400; }
+
+h2, .h2 {
+  font-weight: 100;
+  font-style: italic; }
+
+h3, .h3 {
+  font-weight: 100; }
+
+h4, .h4 {
+  font-weight: 400;
+  font-style: italic; }
+
+h5, .h5 {
+  font-weight: 400; }
+
+h6, .h6 {
+  font-weight: 700;
+  font-style: italic; }
+
+img {
+  max-width: 100%; }
+
+header[role=banner] {
+  background-image: url(img/galaxy.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center top;
+  min-height: 500px;
+  text-align: center; }
+  header[role=banner] h1 {
+    display: inline-block;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    border: 1px solid white;
+    padding: 20px;
+    font-size: 70px;
+    margin-top: 125px;
+    box-shadow: 0 0 4px #8d1318; }
+    header[role=banner] h1 small {
+      font-family: "Exo 2", Exo, Futura, Helvetica Neue, Helvetica, Arial, sans-serif;
+      display: block;
+      font-size: .5em;
+      font-weight: 100;
+      font-style: italic;
+      text-transform: lowercase; }
+  header[role=banner] address {
+    display: block;
+    font-style: normal;
+    font-weight: 300; }
+
+footer[role=contentinfo] {
+  background-color: #262831;
+  color: #fff;
+  padding-top: 32px;
+  padding-bottom: 32px; }
+  footer[role=contentinfo] .no-network {
+    width: 48%;
+    margin-right: 2%;
+    display: inline-block;
+    vertical-align: middle; }
+    footer[role=contentinfo] .no-network img {
+      width: 100px;
+      max-width: 40%;
+      display: inline-block;
+      margin-right: 4%;
+      vertical-align: middle; }
+    footer[role=contentinfo] .no-network span {
+      max-width: 56%;
+      vertical-align: middle;
+      display: inline-block; }
+  footer[role=contentinfo] .so-say-we-all {
+    display: inline-block;
+    width: 48%;
+    text-align: right;
+    text-transform: uppercase;
+    font-size: 50px;
+    vertical-align: middle;
+    color: #3d404d; }
+
+.menu {
+  margin-bottom: 64px; }
+  .menu h2 {
+    position: relative;
+    text-align: center;
+    padding: .2em 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin: 64px 0; }
+    .menu h2:before, .menu h2:after {
+      content: "";
+      position: relative;
+      display: inline-block;
+      width: 50%;
+      height: 1px;
+      vertical-align: middle;
+      background: #3d404d; }
+    .menu h2:before {
+      left: -.5em;
+      margin: 0 0 0 -50%; }
+    .menu h2:after {
+      left: .5em;
+      margin: 0 -50% 0 0; }
+    .menu h2 > span {
+      display: inline-block;
+      vertical-align: middle;
+      white-space: normal; }
+
+.photos {
+  background-color: #3d404d;
+  background-image: url(img/galaxy.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center bottom;
+  padding-top: 64px;
+  padding-bottom: 64px; }
+  .photos h2 {
+    position: relative;
+    text-align: center;
+    padding: .2em 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: center;
+    text-transform: none;
+    margin-bottom: 64px; }
+    .photos h2:before, .photos h2:after {
+      content: "";
+      position: relative;
+      display: inline-block;
+      width: 50%;
+      height: 1px;
+      vertical-align: middle;
+      background: white; }
+    .photos h2:before {
+      left: -.5em;
+      margin: 0 0 0 -50%; }
+    .photos h2:after {
+      left: .5em;
+      margin: 0 -50% 0 0; }
+    .photos h2 > span {
+      display: inline-block;
+      vertical-align: middle;
+      white-space: normal; }
+  .photos ul {
+    font-size: 0;
+    margin-left: -2.5%; }
+    .photos ul > * {
+      font-size: 16px;
+      display: inline-block;
+      width: 22.5%;
+      margin-left: 2.5%;
+      margin-bottom: 2.5%; }
+
+.starbucks {
+  background-color: #262831;
+  color: #fff;
+  font-style: italic;
+  font-size: 36px;
+  font-weight: 100;
+  vertical-align: middle;
+  text-align: center;
+  padding-top: 64px;
+  padding-bottom: 64px; }
+  .starbucks img {
+    vertical-align: middle;
+    width: 100px;
+    height: 100px;
+    margin-right: 1em; }

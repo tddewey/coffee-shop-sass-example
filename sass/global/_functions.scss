@@ -1,0 +1,11 @@
+//
+// Functions
+//
+
+//
+// Gets a color from the $color-definitions map
+// @param $color named color
+// 
+@function tdd-color($color) {
+	@return map-get($color-definitions, $color);
+}

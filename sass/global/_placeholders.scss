@@ -1,0 +1,79 @@
+//
+// Placeholder Classes
+//
+
+//
+// Makes the block level element span the entire browser width
+// so, for example, we can have a full width color block
+// while retaining the standard content width.
+//
+%full-width-bar{
+	margin: 0 -1000px;
+	padding: 0.5em 1000px;
+}
+
+//
+// Standard treatment for text on a graphic background
+//
+%header-text-treatment {
+	text-shadow: 0 0 4px darken($color-alt, 30%);
+	color: #fff;
+	text-transform: uppercase;
+}
+
+//
+// Formatting for menu tables
+//
+%menu-table {
+	width: 100%;
+	border-collapse: collapse;
+	margin: $standard-margin*3 0;
+
+	th {
+		text-align: left;
+		font-weight: 800;
+	}
+
+	th,
+	td {
+		padding: $standard-margin/2;
+		padding-left: 6%;
+	}
+
+	th:first-child,
+	td:first-child {
+		padding-left: 0;
+		width: 50%;
+		text-align: right;
+		padding-right: 6%;
+	}
+
+	td:first-child {
+		border-right: 1px solid tdd-color(galaxy-orange);
+	}
+
+	h3 {
+		display: inline;
+		margin: 0;
+		color: tdd-color(galaxy-orange);
+	}
+
+	th:last-child,
+	td:last-child {
+		padding-right: 0;
+	}
+
+}
+
+//
+// Immediate child LIs are inlined. Apply to ul and ol
+//
+%inline-list {
+	padding: 0;
+
+	&>li {
+		display: inline-block;
+		list-style-type: none;
+	}
+}
+

@@ -1,0 +1,71 @@
+//
+// Mixins
+//
+
+
+//
+// Mixin produces a heading (or other block element) with horizontal lines extending
+// left and right from the vertical middle.
+//
+// This version is thanks to http://stackoverflow.com/questions/12687385/how-to-make-the-headline-h1-with-lines-on-the-sides-with-css-only
+// and http://dabblet.com/gist/1560674
+//
+// @param $color defaults to the text color, but can be modified.
+@mixin ruled-heading( $color: $color-text ) {
+	position: relative;
+	text-align: center;
+	padding: .2em 0;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+
+	&:before,
+	&:after {
+		content: "";
+		position: relative;
+		display: inline-block;
+		width: 50%;
+		height: 1px;
+		vertical-align: middle;
+		background: $color;
+	}
+
+	&:before {
+		left: -.5em;
+		margin: 0 0 0 -50%;
+	}
+
+	&:after {
+		left: .5em;
+		margin: 0 -50% 0 0;
+	}
+
+	&>span {
+		display: inline-block;
+		vertical-align: middle;
+		white-space: normal;
+	}
+}
+
+//
+// Create a grid of images
+// Ensures last line is justified cross-browser
+// Apply to a block element containing fixed-width children
+//
+@mixin image-grid( $gutter: 2.5%, $columns: 4) {
+
+	$item-width: ( 100% - ( $gutter * $columns ) ) / $columns;
+	@debug $item-width;
+
+	font-size: 0;
+	margin-left: -$gutter;
+
+	& > * {
+		font-size: $standard-font-size;
+		display: inline-block;
+		width: $item-width;
+		margin-left: $gutter;
+		margin-bottom: $gutter;
+	}
+
+}

@@ -1,0 +1,42 @@
+
+header[role=banner] {
+	@extend %full-width-bar;
+	background-image: url(img/galaxy.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center top;
+	min-height: 500px;
+	text-align: center;
+
+	h1 {
+		@extend %header-text-treatment;
+		display: inline-block;
+		text-align: center;
+		color: #fff;
+		text-transform: uppercase;
+		letter-spacing: .1em;
+		border: 1px solid white;
+		padding: 20px;
+		font-size: 70px;
+		margin-top: 125px;
+		box-shadow: 0 0 4px darken($color-alt, 20%);
+
+		small {
+			font-family: $font-family-body;
+			display: block;
+			font-size: .5em;
+			font-weight: 100;
+			font-style: italic;
+			text-transform: lowercase;
+
+		}
+	}
+
+	address {
+		@extend %header-text-treatment;
+		display: block;
+		font-style: normal;
+		font-weight: 300;
+	}
+}
+

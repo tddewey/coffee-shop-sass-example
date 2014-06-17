@@ -1,0 +1,19 @@
+.starbucks {
+	@extend %full-width-bar;
+	background-color: tdd-color(galaxy-dark-gray);
+	color: #fff;
+	font-style: italic;
+	font-size: 36px;
+	font-weight: 100;
+	vertical-align: middle;
+	text-align: center;
+	padding-top: $standard-margin*4;
+	padding-bottom: $standard-margin*4;
+
+	img {
+		vertical-align: middle;
+		width: 100px;
+		height: 100px;
+		margin-right: 1em;
+	}
+}

@@ -1,0 +1,46 @@
+// For use in the @font-face below only, to make things a little easier to move around if needed
+$icomoon-root: 'fonts/icomoon/fonts/icomoon';
+
+@font-face {
+	font-family: 'icomoon';
+	src: url('#{$icomoon-root}.eot?-4rvc6i');
+	src: url('#{$icomoon-root}.eot?#iefix-4rvc6i') format('embedded-opentype'), url('#{$icomoon-root}.woff?-4rvc6i') format('woff'), url('#{$icomoon-root}.ttf?-4rvc6i') format('truetype'), url('#{$icomoon-root}.svg?-4rvc6i#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+// Contains the name of our icon and the CSS unicode map
+$icons: (
+	book: \e604,
+	image: \e607,
+	coffee: \e603,
+	time: \e606,
+	twitter: \e602,
+	pasta: \e601,
+	smoking: \e600,
+	mapmarker: \e604,
+);
+
+// Print a class for each icon so it can be used from within HTML
+@each $icon, $unicode in $icons {
+	.icon-#{$icon}:before {
+		content: "#{$unicode}";
+		font-family: 'icomoon';
+		speak: none;
+		font-style: normal;
+		font-weight: normal;
+		font-variant: normal;
+		text-transform: none;
+		line-height: 1;
+		padding-right: .5em;
+		/* Better Font Rendering =========== */
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+}
+
+// A mixin that extends the above icon class. So we can use the icon from within CSS
+// usage:
+@mixin icon($icon) {
+	@extend .icon-#{$icon};
+}
