@@ -2,41 +2,57 @@
 // Variables
 //
 
-// This is a SASS map; a multidimensional array.
-// We are defining colors here, for use generically below
-$color-definitions: (
-	battlestar-red: #e1252c,
-	steel: #c0acae,
-	galaxy-rose: #e7545f,
-	galaxy-orange: #e9aa71,
-	galaxy-gray: #3d404d,
-	galaxy-dark-gray: darken( #3d404d, 10%),
-	very-light-gray: #fefefe,
-	light-gray: #efefef,
-	dark-gray: #444,
-);
+
+//	Workshop: Maps (arrays)
+//	Variables can be simple values (as we've already seen). They can also be a list of
+//	values. Such as `$border: 1px solid red` - the list is 1px, solid, and red. Lists
+//	can, in turn, be multi-dimensional and include definitions for each item in the list
+//
+//	Example:
+//	$base-sizes: (
+//		font: 16px,
+//		line-height: 1.2,
+//		margin: 2em,
+//		sidebar: 300px
+//	);
+//
+//	Tasks:
+//	1. Create a map called $color-definitions
+//	2. Add the following keys:
+//		 * battlestar-red
+//		 * steel
+//		 * galaxy-rose
+//		 * galaxy-orange
+//		 * galaxy-gray
+//		 * galaxy-dark-gray
+//		 * very-light-gray
+//		 * light-gray
+//		 * dark-gray
+//	3. Assign colors for each of these keys.
+
+// Color definition map
 
 
-//WORKSHOP: Variables
-//Variables can be defined anywhere by using the dollar sign ($). Typically you'd
-//want to assign a variable for any value that is used repeatedly and/or might change
-//later. Common usage includes colors and fonts. Also consider common spacing or measurements
+//	WORKSHOP: Variables
+//	Variables can be defined anywhere by using the dollar sign ($). Typically you'd
+//	want to assign a variable for any value that is used repeatedly and/or might change
+//	later. Common usage includes colors and fonts. Also consider common spacing or measurements
 //
-//Example:
-//$sidebar-width: 320px; // sets the sidebar width.
+//	Example:
+//	$sidebar-width: 320px; // sets the sidebar width.
 //
-//Tasks:
-//1. Assign the following variables:
-//		* color-alt
-//		* color-link
-//		* color-text
-//		* color-background
-//		* font-family-headline
-//		* font-family-body
-//		* standard-font-size
-//		* standard-margin
-//		* content-width
-//2. Uncomment usages throughout the codebase for each of these variables
+//	Tasks:
+//	1. Assign the following variables:
+//			* color-alt
+//			* color-link
+//			* color-text
+//			* color-background
+//			* font-family-headline
+//			* font-family-body
+//			* standard-font-size
+//			* standard-margin
+//			* content-width
+//	2. Uncomment usages throughout the codebase for each of these variables
 
 
 // Colors

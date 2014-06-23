@@ -1,20 +1,20 @@
 //
-// WORKSHOP: Imports
-// CSS has an @import tag to import other stylesheets. SASS kicks this up a notch
-// with .scss files it will concatenate (merge together) the imported files
-// Thus, typically, your base stylesheet will simply be calls to partials
+// 	WORKSHOP: Imports
+// 	CSS has an @import tag to import other stylesheets. SASS kicks this up a notch
+// 	with .scss files it will concatenate (merge together) the imported files
+// 	Thus, typically, your base stylesheet will simply be calls to partials
 //
-// The partials themselves are named with an underscore first to indicate that
-// they are not to be processed themselves, but are imported. The underscore and
-// extension are not needed when importing.
+// 	The partials themselves are named with an underscore first to indicate that
+// 	they are not to be processed themselves, but are imported. The underscore and
+// 	extension are not needed when importing.
 //
-// Example:
-// @import 'base/reset' // would import 'base/_reset.scss'
+// 	Example:
+// 	@import 'base/reset' // would import 'base/_reset.scss'
 //
-// Tasks:
-// 1. Import every scss file in /global
-// 2. Import every scss file in /base
-// 3. Import every scss file in /components
+// 	Tasks:
+// 	1. Import every scss file in /global
+// 	2. Import every scss file in /base
+// 	3. Import every scss file in /components
 //
 
 // Non-printing, global styles
