@@ -1,9 +1,9 @@
 footer[role=contentinfo] {
 	@extend %full-width-bar;
-	background-color: tdd-color(galaxy-dark-gray);
+//	background-color: tdd-color(galaxy-dark-gray);
 	color: #fff;
-	padding-top: $standard-margin*2;
-	padding-bottom: $standard-margin*2;
+//	padding-top: $standard-margin*2;
+//	padding-bottom: $standard-margin*2;
 
 	.no-network {
 		width: 48%;
@@ -33,6 +33,6 @@ footer[role=contentinfo] {
 		text-transform: uppercase;
 		font-size: 50px;
 		vertical-align: middle;
-		color: tdd-color(galaxy-gray);
+//		color: tdd-color(galaxy-gray);
 	}
 }

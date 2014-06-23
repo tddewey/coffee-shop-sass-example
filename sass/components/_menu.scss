@@ -1,12 +1,12 @@
 .menu {
-	margin-bottom: $standard-margin*4;
+//	margin-bottom: $standard-margin*4;
 
 	h2 {
-		@include ruled-heading();
-		margin: $standard-margin*4 0;
+//		@include ruled-heading();
+//		margin: $standard-margin*4 0;
 	}
 
 	table {
-		@extend %menu-table;
+//		@extend %menu-table;
 	}
 }

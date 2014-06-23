@@ -1,24 +1,24 @@
 .photos {
-	@extend %full-width-bar;
-	background-color: tdd-color(galaxy-gray);
+//	@extend %full-width-bar;
+//	background-color: tdd-color(galaxy-gray);
 	background-image: url(img/galaxy.jpg);
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center bottom;
-	padding-top: $standard-margin*4;
-	padding-bottom: $standard-margin*4;
+//	padding-top: $standard-margin*4;
+//	padding-bottom: $standard-margin*4;
 
 	h2 {
-		@extend %header-text-treatment;
-		@include icon(image);
-		@include ruled-heading(#fff);
+//		@extend %header-text-treatment;
+//		@include icon(image);
+//		@include ruled-heading(#fff);
 		text-align: center;
 		text-transform: none;
-		margin-bottom: $standard-margin*4;
+//		margin-bottom: $standard-margin*4;
 	}
 
 	ul {
-		@extend %inline-list;
-		@include image-grid();
+//		@extend %inline-list;
+//		@include image-grid();
 	}
 }

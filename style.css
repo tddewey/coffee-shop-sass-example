@@ -1,44 +1,6 @@
-header[role=banner], footer[role=contentinfo], .photos, .starbucks {
+footer[role=contentinfo] {
   margin: 0 -1000px;
   padding: 0.5em 1000px; }
-
-header[role=banner] h1, header[role=banner] address, .photos h2 {
-  text-shadow: 0 0 4px #600d10;
-  color: #fff;
-  text-transform: uppercase; }
-
-.menu table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 48px 0; }
-  .menu table th {
-    text-align: left;
-    font-weight: 800; }
-  .menu table th,
-  .menu table td {
-    padding: 8px;
-    padding-left: 6%; }
-  .menu table th:first-child,
-  .menu table td:first-child {
-    padding-left: 0;
-    width: 50%;
-    text-align: right;
-    padding-right: 6%; }
-  .menu table td:first-child {
-    border-right: 1px solid #e9aa71; }
-  .menu table h3 {
-    display: inline;
-    margin: 0;
-    color: #e9aa71; }
-  .menu table th:last-child,
-  .menu table td:last-child {
-    padding-right: 0; }
-
-.photos ul {
-  padding: 0; }
-  .photos ul > li {
-    display: inline-block;
-    list-style-type: none; }
 
 @font-face {
   font-family: 'icomoon';
@@ -60,7 +22,7 @@ header[role=banner] h1, header[role=banner] address, .photos h2 {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-.icon-image:before, .photos h2:before {
+.icon-image:before {
   content: "\e607";
   font-family: 'icomoon';
   speak: none;
@@ -166,25 +128,14 @@ body, html {
   overflow-x: hidden; }
 
 body {
-  color: #3d404d;
-  background-color: #fefefe;
   padding: 0;
-  margin: 0;
-  font-family: "Exo 2", Exo, Futura, Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 16px; }
+  margin: 0; }
 
 main {
-  max-width: 800px;
   margin-left: auto;
   margin-right: auto; }
 
-a {
-  color: #e1252c; }
-  a:hover {
-    color: #a36365; }
-
 h1, .h1 {
-  font-family: "Antic Slab", Georgia, serif;
   font-weight: 400; }
 
 h2, .h2 {
@@ -222,10 +173,8 @@ header[role=banner] {
     border: 1px solid white;
     padding: 20px;
     font-size: 70px;
-    margin-top: 125px;
-    box-shadow: 0 0 4px #8d1318; }
+    margin-top: 125px; }
     header[role=banner] h1 small {
-      font-family: "Exo 2", Exo, Futura, Helvetica Neue, Helvetica, Arial, sans-serif;
       display: block;
       font-size: .5em;
       font-weight: 100;
@@ -237,10 +186,7 @@ header[role=banner] {
     font-weight: 300; }
 
 footer[role=contentinfo] {
-  background-color: #262831;
-  color: #fff;
-  padding-top: 32px;
-  padding-bottom: 32px; }
+  color: #fff; }
   footer[role=contentinfo] .no-network {
     width: 48%;
     margin-right: 2%;
@@ -262,94 +208,24 @@ footer[role=contentinfo] {
     text-align: right;
     text-transform: uppercase;
     font-size: 50px;
-    vertical-align: middle;
-    color: #3d404d; }
-
-.menu {
-  margin-bottom: 64px; }
-  .menu h2 {
-    position: relative;
-    text-align: center;
-    padding: .2em 0;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    margin: 64px 0; }
-    .menu h2:before, .menu h2:after {
-      content: "";
-      position: relative;
-      display: inline-block;
-      width: 50%;
-      height: 1px;
-      vertical-align: middle;
-      background: #3d404d; }
-    .menu h2:before {
-      left: -.5em;
-      margin: 0 0 0 -50%; }
-    .menu h2:after {
-      left: .5em;
-      margin: 0 -50% 0 0; }
-    .menu h2 > span {
-      display: inline-block;
-      vertical-align: middle;
-      white-space: normal; }
+    vertical-align: middle; }
 
 .photos {
-  background-color: #3d404d;
   background-image: url(img/galaxy.jpg);
   background-size: cover;
   background-attachment: fixed;
-  background-position: center bottom;
-  padding-top: 64px;
-  padding-bottom: 64px; }
+  background-position: center bottom; }
   .photos h2 {
-    position: relative;
     text-align: center;
-    padding: .2em 0;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    text-align: center;
-    text-transform: none;
-    margin-bottom: 64px; }
-    .photos h2:before, .photos h2:after {
-      content: "";
-      position: relative;
-      display: inline-block;
-      width: 50%;
-      height: 1px;
-      vertical-align: middle;
-      background: white; }
-    .photos h2:before {
-      left: -.5em;
-      margin: 0 0 0 -50%; }
-    .photos h2:after {
-      left: .5em;
-      margin: 0 -50% 0 0; }
-    .photos h2 > span {
-      display: inline-block;
-      vertical-align: middle;
-      white-space: normal; }
-  .photos ul {
-    font-size: 0;
-    margin-left: -2.5%; }
-    .photos ul > * {
-      font-size: 16px;
-      display: inline-block;
-      width: 22.5%;
-      margin-left: 2.5%;
-      margin-bottom: 2.5%; }
+    text-transform: none; }
 
 .starbucks {
-  background-color: #262831;
   color: #fff;
   font-style: italic;
   font-size: 36px;
   font-weight: 100;
   vertical-align: middle;
-  text-align: center;
-  padding-top: 64px;
-  padding-bottom: 64px; }
+  text-align: center; }
   .starbucks img {
     vertical-align: middle;
     width: 100px;

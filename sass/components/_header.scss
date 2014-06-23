@@ -1,6 +1,6 @@
 
 header[role=banner] {
-	@extend %full-width-bar;
+//	@extend %full-width-bar;
 	background-image: url(img/galaxy.jpg);
 	background-size: cover;
 	background-attachment: fixed;
@@ -9,7 +9,7 @@ header[role=banner] {
 	text-align: center;
 
 	h1 {
-		@extend %header-text-treatment;
+//		@extend %header-text-treatment;
 		display: inline-block;
 		text-align: center;
 		letter-spacing: .1em;
@@ -17,10 +17,10 @@ header[role=banner] {
 		padding: 20px;
 		font-size: 70px;
 		margin-top: 125px;
-		box-shadow: 0 0 4px darken($color-alt, 20%);
+//		box-shadow: 0 0 4px darken($color-alt, 20%);
 
 		small {
-			font-family: $font-family-body;
+//			font-family: $font-family-body;
 			display: block;
 			font-size: .5em;
 			font-weight: 100;
@@ -31,7 +31,7 @@ header[role=banner] {
 	}
 
 	address {
-		@extend %header-text-treatment;
+//		@extend %header-text-treatment;
 		display: block;
 		font-style: normal;
 		font-weight: 300;

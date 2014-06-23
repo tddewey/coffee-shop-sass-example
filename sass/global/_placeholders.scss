@@ -16,7 +16,7 @@
 // Standard treatment for text on a graphic background
 //
 %header-text-treatment {
-	text-shadow: 0 0 4px darken($color-alt, 30%);
+//	text-shadow: 0 0 4px darken($color-alt, 30%);
 	color: #fff;
 	text-transform: uppercase;
 }
@@ -27,7 +27,7 @@
 %menu-table {
 	width: 100%;
 	border-collapse: collapse;
-	margin: $standard-margin*3 0;
+//	margin: $standard-margin*3 0;
 
 	th {
 		text-align: left;
@@ -36,7 +36,7 @@
 
 	th,
 	td {
-		padding: $standard-margin/2;
+//		padding: $standard-margin/2;
 		padding-left: 6%;
 	}
 
@@ -49,13 +49,13 @@
 	}
 
 	td:first-child {
-		border-right: 1px solid tdd-color(galaxy-orange);
+//		border-right: 1px solid tdd-color(galaxy-orange);
 	}
 
 	h3 {
 		display: inline;
 		margin: 0;
-		color: tdd-color(galaxy-orange);
+//		color: tdd-color(galaxy-orange);
 	}
 
 	th:last-child,

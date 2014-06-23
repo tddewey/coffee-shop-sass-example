@@ -16,17 +16,33 @@ $color-definitions: (
 	dark-gray: #444,
 );
 
-// Using a helper function, we're defining colors for use here
-$color-alt: tdd-color(battlestar-red);
-$color-link: tdd-color(battlestar-red);
 
-$color-text: tdd-color(galaxy-gray);
-$color-background: tdd-color(very-light-gray);
+//WORKSHOP: Variables
+//Variables can be defined anywhere by using the dollar sign ($). Typically you'd
+//want to assign a variable for any value that is used repeatedly and/or might change
+//later. Common usage includes colors and fonts. Also consider common spacing or measurements
+//
+//Example:
+//$sidebar-width: 320px; // sets the sidebar width.
+//
+//Tasks:
+//1. Assign the following variables:
+//		* color-alt
+//		* color-link
+//		* color-text
+//		* color-background
+//		* font-family-headline
+//		* font-family-body
+//		* standard-font-size
+//		* standard-margin
+//		* content-width
+//2. Uncomment usages throughout the codebase for each of these variables
 
-// Antic slab is serif, Exo 2 is sans — both are from Google Fonts and loaded in <head>
-$font-family-headline: 'Antic Slab', Georgia, serif;
-$font-family-body: 'Exo 2', Exo, Futura, Helvetica Neue, Helvetica, Arial, sans-serif;
 
-$standard-font-size: 16px;
-$standard-margin: 16px;
-$content-width: 800px;
+// Colors
+
+
+// Fonts
+
+
+// Box Model (margin, width, etc)
