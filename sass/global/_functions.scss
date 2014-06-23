@@ -2,10 +2,34 @@
 // Functions
 //
 
+//	Workshop: Functions
+//	Sass has both built-in functions, and also provides the ability to create your
+//	own functions as part of your project.
+//
+//	This workshop will have two parts. The first is using a built in function, darken().
+//	The second part is creating our own function that uses the built-in function map-get()
+//
+//	SASS function reference: http://sass-lang.com/documentation/Sass/Script/Functions.html
+//
+//	Built-in Example:
+//	desaturate(#67d5d6, 20%); // returns #7ac2c3
+//
+//	Custom Function Example:
+//	@function tdd-color-palette($color) {
+//		$color: desaturate($color, 20%);
+//		$color: adjust-hue($color, 180deg);
+//		@return $color;
+//	}
+//
+//	1. Look up the darken() function in the function reference
+//	2. Use darken() to change galaxy-dark-gray to 20% darker than galaxy-gray in _variables.scss
+//	3. Look up the map-get() function in the function reference
+//	4. Have the function tdd-color (below) use map-get to return the named color from the $color-definitions map
+//  5. Uncomment usages of tdd-color in all the stylesheets
+
 //
 // Gets a color from the $color-definitions map
 // @param $color named color
-// 
+// @todo incomplete
 @function tdd-color($color) {
-	@return map-get($color-definitions, $color);
 }
