@@ -1,5 +1,6 @@
 .starbucks {
 	@extend %full-width-bar;
+	@include optical-center( $standard-margin*6 );
 	background-color: tdd-color(galaxy-dark-gray);
 	color: #fff;
 	font-style: italic;
@@ -7,8 +8,6 @@
 	font-weight: 100;
 	vertical-align: middle;
 	text-align: center;
-	padding-top: $standard-margin*4;
-	padding-bottom: $standard-margin*4;
 
 	img {
 		vertical-align: middle;

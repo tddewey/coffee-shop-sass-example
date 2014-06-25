@@ -69,3 +69,26 @@
 	}
 
 }
+
+// optical-center
+//
+// Give this mixin a padding value that you might normally apply equally to
+// top and bottom padding on an element (so it's contents are centered).
+// It will, instead, give a bit more to the bottom and a bit less to the top so
+// the element appears optically centered and takes up the same amount of room.
+//
+// @param $padding any value that you would normally give to top and bottom padding
+// @param $ratio unitless multiplier, defaults to 1.3
+@mixin optical-center($padding, $ratio: 1.3) {
+	$padding-bottom: $padding * $ratio;
+	$padding-top: $padding;
+
+	// now adjust the values so that the total padding-bottom and padding-top
+	// is equal to the padding passed in.
+	$adjust: ($padding-bottom + $padding-top) - ($padding * 2);
+	$padding-bottom: $padding-bottom - $adjust;
+	$padding-top: $padding-top - $adjust;
+
+	padding-bottom: $padding-bottom;
+	padding-top: $padding-top;
+}
