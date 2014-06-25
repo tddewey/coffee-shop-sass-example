@@ -1,9 +1,10 @@
 footer[role=contentinfo] {
 	@extend %full-width-bar;
+	@include optical-center(50px);
 //	background-color: tdd-color(galaxy-dark-gray);
 	color: #fff;
-//	padding-top: $standard-margin*2;
-//	padding-bottom: $standard-margin*2;
+	padding-top: $standard-margin*2;
+	padding-bottom: $standard-margin*2;
 
 	.no-network {
 		width: 48%;

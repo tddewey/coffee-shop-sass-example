@@ -1,5 +1,5 @@
 .menu {
-//	margin-bottom: $standard-margin*4;
+	@extend %full-width-bar;
 
 	h2 {
 //		@include ruled-heading();

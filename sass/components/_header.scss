@@ -1,11 +1,11 @@
 
 header[role=banner] {
-//	@extend %full-width-bar;
+	//	@extend %full-width-bar;
+	@include optical-center(150px);
 	background-image: url(img/galaxy.jpg);
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center top;
-	min-height: 500px;
 	text-align: center;
 
 	h1 {
@@ -16,6 +16,7 @@ header[role=banner] {
 		border: 1px solid white;
 		padding: 20px;
 		font-size: 70px;
+		margin: 0;
 		margin-top: 125px;
 //		box-shadow: 0 0 4px darken($color-alt, 20%);
 

@@ -5,8 +5,6 @@
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center bottom;
-//	padding-top: $standard-margin*4;
-//	padding-bottom: $standard-margin*4;
 
 	h2 {
 //		@extend %header-text-treatment;
@@ -14,6 +12,7 @@
 //		@include ruled-heading(#fff);
 		text-align: center;
 		text-transform: none;
+		margin-top: 0;
 //		margin-bottom: $standard-margin*4;
 	}
 
