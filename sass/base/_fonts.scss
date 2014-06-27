@@ -21,21 +21,26 @@ $icons: (
 	mapmarker: \e604,
 );
 
+// Icon placeholder class. Should be used on a psuedo element in conjunction with content: ''
+%icon {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	padding-right: .5em;
+	// Better Font Rendering
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
 // Print a class for each icon so it can be used from within HTML
 @each $icon, $unicode in $icons {
 	.icon-#{$icon}:before {
+		@extend %icon;
 		content: "#{$unicode}";
-		font-family: 'icomoon';
-		speak: none;
-		font-style: normal;
-		font-weight: normal;
-		font-variant: normal;
-		text-transform: none;
-		line-height: 1;
-		padding-right: .5em;
-		/* Better Font Rendering =========== */
-		-webkit-font-smoothing: antialiased;
-		-moz-osx-font-smoothing: grayscale;
 	}
 }
 
