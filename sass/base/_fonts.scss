@@ -1,4 +1,20 @@
-// For use in the @font-face below only, to make things a little easier to move around if needed
+//	Workshop: Comprehensive example & Control Structures
+//
+//	This example will add font icons and font icon support to this website.
+//
+//	Tasks:
+//	1. In the @font-face declaration below, 'fonts/icomoon/fonts/icomoon.' is repeated
+//		 five times. Use a sass variable to define it once, instead.
+//
+//	2. Below, there are selectors for every icon in the font. .icon-icon-name {..}
+//		 we can gain some efficiency by doing a number of things
+//		 		2a. Create a variable map that holds the icon name and the css content: value (e.g. \e694)
+//				2b. Create a placeholder class for the CSS common to each icon
+//				2c. using @each, loop through your map to create a class for each icon
+//				2d. Create an icon mixin so that existing classes can be extended to add an icon
+//			  2e. Remove any places where the icon mixin was commented out
+
+
 $icomoon-root: 'fonts/icomoon/fonts/icomoon';
 
 @font-face {
