@@ -21,38 +21,60 @@
 	font-style: normal;
 }
 
-// Contains the name of our icon and the CSS unicode map
-$icons: (
-	book: \e604,
-	image: \e607,
-	coffee: \e603,
-	time: \e606,
-	twitter: \e602,
-	pasta: \e601,
-	smoking: \e600,
-	mapmarker: \e604,
-);
-
-// Print a class for each icon so it can be used from within HTML
-@each $icon, $unicode in $icons {
-	.icon-#{$icon}:before {
-		content: "#{$unicode}";
-		font-family: 'icomoon';
-		speak: none;
-		font-style: normal;
-		font-weight: normal;
-		font-variant: normal;
-		text-transform: none;
-		line-height: 1;
-		padding-right: .5em;
-		/* Better Font Rendering =========== */
-		-webkit-font-smoothing: antialiased;
-		-moz-osx-font-smoothing: grayscale;
-	}
+.icon-book:before,
+.icon-image:before,
+.icon-coffee:before,
+.icon-time:before,
+.icon-twitter:before,
+.icon-pasta:before,
+.icon-smoking:before,
+.icon-mapmarker:before {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	padding-right: .5em;
+	// Better Font Rendering
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
-// A mixin that extends the above icon class. So we can use the icon from within CSS
-// usage:
-@mixin icon($icon) {
-	@extend .icon-#{$icon};
+.icon-book:before {
+	content: "\e604";
+	font-family: 'icomoon';
 }
+
+.icon-image:before {
+	content: "\e607";
+}
+
+.icon-coffee:before {
+	content: "\e603";
+}
+
+.icon-time:before {
+	content: "\e606";
+}
+
+.icon-twitter:before {
+	content: "\e602";
+}
+
+.icon-pasta:before {
+	content: "\e601";
+}
+
+.icon-smoking:before {
+	content: "\e600";
+}
+
+.icon-mapmarker:before {
+	content: "\e604";
+}
+
+// icon
+// Extends an icon class. @extend into any selector to add an icon before it
+// @param $icon named icon from above (e.g. mapmarker)
