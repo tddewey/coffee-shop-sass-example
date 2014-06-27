@@ -1,241 +1,77 @@
-footer[role=contentinfo], .menu {
-  padding-bottom: 100px;
-  padding-top: 70px;
-  margin: 0 -1000px;
-  padding-left: 1000px;
-  padding-right: 1000px; }
+/*
+Syntax error: Invalid CSS after "Workshop:": expected pseudoclass or pseudoelement, was " mixins"
+        on line 73 of sass/global/_mixins.scss
+        from line 23 of sass/style.scss
 
-@font-face {
-  font-family: 'icomoon';
-  src: url("fonts/icomoon/fonts/icomoon.eot?-4rvc6i");
-  src: url("fonts/icomoon/fonts/icomoon.eot?#iefix-4rvc6i") format("embedded-opentype"), url("fonts/icomoon/fonts/icomoon.woff?-4rvc6i") format("woff"), url("fonts/icomoon/fonts/icomoon.ttf?-4rvc6i") format("truetype"), url("fonts/icomoon/fonts/icomoon.svg?-4rvc6i#icomoon") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-.icon-book:before {
-  content: "\e604";
-  font-family: 'icomoon';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  padding-right: .5em;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+68: 		margin-bottom: $gutter;
+69: 	}
+70: 
+71: }
+72: 
+73: Workshop: mixins
+74: Mixins are blocks of css that can be reused in any selector. Unlike @extends,
+75: mixins will actually re-print the styles each time. Because they are re-printed
+76: each time, mixins can also accept parameters — that block of css can change.
+77: 
+78: Rule of thumb: use a mixin when you need parameters and use a placeholder class
 
-.icon-image:before {
-  content: "\e607";
-  font-family: 'icomoon';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  padding-right: .5em;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
-
-.icon-coffee:before {
-  content: "\e603";
-  font-family: 'icomoon';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  padding-right: .5em;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
-
-.icon-time:before {
-  content: "\e606";
-  font-family: 'icomoon';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  padding-right: .5em;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
-
-.icon-twitter:before {
-  content: "\e602";
-  font-family: 'icomoon';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  padding-right: .5em;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
-
-.icon-pasta:before {
-  content: "\e601";
-  font-family: 'icomoon';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  padding-right: .5em;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
-
-.icon-smoking:before {
-  content: "\e600";
-  font-family: 'icomoon';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  padding-right: .5em;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
-
-.icon-mapmarker:before {
-  content: "\e604";
-  font-family: 'icomoon';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  padding-right: .5em;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
-
-* {
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-
-body, html {
-  overflow-x: hidden; }
-
-body {
-  padding: 0;
-  margin: 0; }
-
-main {
-  margin-left: auto;
-  margin-right: auto; }
-
-h1, .h1 {
-  font-weight: 400; }
-
-h2, .h2 {
-  font-weight: 100;
-  font-style: italic; }
-
-h3, .h3 {
-  font-weight: 100; }
-
-h4, .h4 {
-  font-weight: 400;
-  font-style: italic; }
-
-h5, .h5 {
-  font-weight: 400; }
-
-h6, .h6 {
-  font-weight: 700;
-  font-style: italic; }
-
-img {
-  max-width: 100%; }
-
-header[role=banner] {
-  padding-bottom: 150px;
-  padding-top: 105px;
-  background-image: url(img/galaxy.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center top;
-  text-align: center; }
-  header[role=banner] h1 {
-    display: inline-block;
-    text-align: center;
-    letter-spacing: .1em;
-    border: 1px solid white;
-    padding: 20px;
-    font-size: 70px;
-    margin: 0;
-    margin-top: 125px; }
-    header[role=banner] h1 small {
-      display: block;
-      font-size: .5em;
-      font-weight: 100;
-      font-style: italic;
-      text-transform: lowercase; }
-  header[role=banner] address {
-    display: block;
-    font-style: normal;
-    font-weight: 300; }
-
-footer[role=contentinfo] {
-  padding-bottom: 50px;
-  padding-top: 35px;
-  color: #fff; }
-  footer[role=contentinfo] .no-network {
-    width: 48%;
-    margin-right: 2%;
-    display: inline-block;
-    vertical-align: middle; }
-    footer[role=contentinfo] .no-network img {
-      width: 100px;
-      max-width: 40%;
-      display: inline-block;
-      margin-right: 4%;
-      vertical-align: middle; }
-    footer[role=contentinfo] .no-network span {
-      max-width: 56%;
-      vertical-align: middle;
-      display: inline-block; }
-  footer[role=contentinfo] .so-say-we-all {
-    display: inline-block;
-    width: 48%;
-    text-align: right;
-    text-transform: uppercase;
-    font-size: 50px;
-    vertical-align: middle; }
-
-.photos {
-  background-image: url(img/galaxy.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center bottom; }
-  .photos h2 {
-    text-align: center;
-    text-transform: none;
-    margin-top: 0; }
-
-.starbucks {
-  color: #fff;
-  font-style: italic;
-  font-size: 36px;
-  font-weight: 100;
-  vertical-align: middle;
-  text-align: center; }
-  .starbucks img {
-    vertical-align: middle;
-    width: 100px;
-    height: 100px;
-    margin-right: 1em; }
+Backtrace:
+sass/global/_mixins.scss:73
+sass/style.scss:23
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.8/lib/sass/scss/parser.rb:1312:in `expected'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.8/lib/sass/scss/parser.rb:1248:in `expected'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.8/lib/sass/scss/parser.rb:1228:in `expr!'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.8/lib/sass/scss/parser.rb:914:in `pseudo'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.8/lib/sass/scss/parser.rb:794:in `simple_selector_sequence'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.8/lib/sass/scss/parser.rb:752:in `_selector'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.8/lib/sass/scss/parser.rb:727:in `selector'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.8/lib/sass/scss/parser.rb:710:in `selector_sequence'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.8/lib/sass/scss/parser.rb:632:in `ruleset'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.8/lib/sass/scss/parser.rb:659:in `block_child'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.8/lib/sass/scss/parser.rb:652:in `block_contents'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.8/lib/sass/scss/parser.rb:116:in `stylesheet'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.8/lib/sass/scss/parser.rb:41:in `parse'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.8/lib/sass/engine.rb:409:in `_to_tree'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.8/lib/sass/engine.rb:305:in `to_tree'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:295:in `block in visit_import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.8/lib/sass/stack.rb:88:in `block in with_import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.8/lib/sass/stack.rb:121:in `with_frame'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.8/lib/sass/stack.rb:88:in `with_import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:294:in `visit_import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.8/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.8/lib/sass/stack.rb:79:in `block in with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.8/lib/sass/stack.rb:121:in `with_frame'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.8/lib/sass/stack.rb:79:in `with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:152:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.8/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.8/lib/sass/tree/visitors/base.rb:52:in `map'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.8/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:161:in `block in visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:173:in `with_environment'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:160:in `visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.8/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:180:in `visit_root'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.8/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:151:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.8/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.8/lib/sass/tree/root_node.rb:20:in `render'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.8/lib/sass/engine.rb:274:in `render'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.8/lib/sass/plugin/compiler.rb:378:in `update_stylesheet'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.8/lib/sass/plugin/compiler.rb:189:in `block in update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.8/lib/sass/plugin/compiler.rb:186:in `each'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.8/lib/sass/plugin/compiler.rb:186:in `update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.8/lib/sass/plugin/compiler.rb:357:in `on_file_changed'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.8/lib/sass/plugin/compiler.rb:250:in `block in watch'
+/Library/Ruby/Gems/2.0.0/gems/listen-2.7.8/lib/listen/listener.rb:275:in `call'
+/Library/Ruby/Gems/2.0.0/gems/listen-2.7.8/lib/listen/listener.rb:275:in `_process_changes'
+/Library/Ruby/Gems/2.0.0/gems/listen-2.7.8/lib/listen/listener.rb:233:in `block in _wait_for_changes'
+/Library/Ruby/Gems/2.0.0/gems/listen-2.7.8/lib/listen/listener.rb:216:in `loop'
+/Library/Ruby/Gems/2.0.0/gems/listen-2.7.8/lib/listen/listener.rb:216:in `_wait_for_changes'
+/Library/Ruby/Gems/2.0.0/gems/listen-2.7.8/lib/listen/listener.rb:310:in `block in _start_wait_thread'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Invalid CSS after \"Workshop:\": expected pseudoclass or pseudoelement, was \" mixins\"\A         on line 73 of sass/global/_mixins.scss\A         from line 23 of sass/style.scss\A \A 68: 		margin-bottom: $gutter;\A 69: 	}\A 70: \A 71: }\A 72: \A 73: Workshop: mixins\A 74: Mixins are blocks of css that can be reused in any selector. Unlike @extends,\A 75: mixins will actually re-print the styles each time. Because they are re-printed\A 76: each time, mixins can also accept parameters — that block of css can change.\A 77: \A 78: Rule of thumb: use a mixin when you need parameters and use a placeholder class"; }

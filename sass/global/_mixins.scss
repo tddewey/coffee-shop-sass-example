@@ -70,6 +70,35 @@
 
 }
 
+//	Workshop: mixins
+//	Mixins are blocks of css that can be reused in any selector. Unlike @extends,
+//	mixins will actually re-print the styles each time. Because they are re-printed
+//	each time, mixins can also accept parameters — that block of css can change.
+//
+//	Rule of thumb: use a mixin when you need parameters and use a placeholder class
+//	when you don't.
+//
+//	Example:
+//	@mixin breakpoint($breakpoint) {
+//		@media screen and (min-width: $breakpoint) {
+//			@content; // @content is a special construct for mixins.
+//		}
+//	}
+//
+//	.my-selector {
+//		color: green;
+//
+//		@include breakpoint(1024px) {
+//			color: yellow;
+//		}
+//	}
+//
+//	Tasks:
+//	1. we're creating an optical centering plugin. It should output two css rules:
+//			* padding-bottom:
+//		  * padding-top:
+//	2. Using the mixin definition, see if you can create a mixin.
+
 // optical-center
 //
 // Give this mixin a padding value that you might normally apply equally to
