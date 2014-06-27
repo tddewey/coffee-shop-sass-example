@@ -8,7 +8,6 @@
 
 	h2 {
 		@extend %header-text-treatment;
-		@include icon(image);
 		@include ruled-heading(#fff);
 		text-align: center;
 		text-transform: none;
