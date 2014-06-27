@@ -44,8 +44,9 @@ $icons: (
 	}
 }
 
-// A mixin that extends the above icon class. So we can use the icon from within CSS
-// usage:
+// icon
+// Extends an icon class. @extend into any selector to add an icon before it
+// @param $icon named icon from above (e.g. mapmarker)
 @mixin icon($icon) {
 	@extend .icon-#{$icon};
 }
