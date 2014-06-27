@@ -9,117 +9,49 @@ footer[role=contentinfo], .menu {
   src: url("fonts/icomoon/fonts/icomoon.eot?#iefix-4rvc6i") format("embedded-opentype"), url("fonts/icomoon/fonts/icomoon.woff?-4rvc6i") format("woff"), url("fonts/icomoon/fonts/icomoon.ttf?-4rvc6i") format("truetype"), url("fonts/icomoon/fonts/icomoon.svg?-4rvc6i#icomoon") format("svg");
   font-weight: normal;
   font-style: normal; }
+.icon-book:before,
+.icon-image:before,
+.icon-coffee:before,
+.icon-time:before,
+.icon-twitter:before,
+.icon-pasta:before,
+.icon-smoking:before,
+.icon-mapmarker:before {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  padding-right: .5em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
 .icon-book:before {
   content: "\e604";
-  font-family: 'icomoon';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  padding-right: .5em;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  font-family: 'icomoon'; }
 
 .icon-image:before {
-  content: "\e607";
-  font-family: 'icomoon';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  padding-right: .5em;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  content: "\e607"; }
 
 .icon-coffee:before {
-  content: "\e603";
-  font-family: 'icomoon';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  padding-right: .5em;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  content: "\e603"; }
 
 .icon-time:before {
-  content: "\e606";
-  font-family: 'icomoon';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  padding-right: .5em;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  content: "\e606"; }
 
 .icon-twitter:before {
-  content: "\e602";
-  font-family: 'icomoon';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  padding-right: .5em;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  content: "\e602"; }
 
 .icon-pasta:before {
-  content: "\e601";
-  font-family: 'icomoon';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  padding-right: .5em;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  content: "\e601"; }
 
 .icon-smoking:before {
-  content: "\e600";
-  font-family: 'icomoon';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  padding-right: .5em;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  content: "\e600"; }
 
 .icon-mapmarker:before {
-  content: "\e604";
-  font-family: 'icomoon';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  padding-right: .5em;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  content: "\e604"; }
 
 * {
   -moz-box-sizing: border-box;
