@@ -9,7 +9,7 @@
 // while retaining the standard content width.
 //
 %full-width-bar{
-	@include optical-center(100px);
+	//@include optical-center(100px);
 	margin: 0 -1000px;
 	padding-left: 1000px;
 	padding-right: 1000px;

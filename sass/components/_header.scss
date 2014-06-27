@@ -1,7 +1,7 @@
 
 header[role=banner] {
 	//	@extend %full-width-bar;
-	@include optical-center(150px);
+	// @include optical-center(150px);
 	background-image: url(img/galaxy.jpg);
 	background-size: cover;
 	background-attachment: fixed;
