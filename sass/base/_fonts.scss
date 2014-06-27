@@ -11,8 +11,9 @@
 //		 		2a. Create a variable map that holds the icon name and the css content: value (e.g. \e694)
 //				2b. Create a placeholder class for the CSS common to each icon
 //				2c. using @each, loop through your map to create a class for each icon
-//				2d. Create a mixin so that existing classes can be extended to add an icon
-
+//				2d. Create an icon mixin so that existing classes can be extended to add an icon
+//			  2e. Remove any places where the icon mixin was commented out  
+//
 @font-face {
 	font-family: 'icomoon';
 	src: url('fonts/icomoon/fonts/icomoon.eot?-4rvc6i');
