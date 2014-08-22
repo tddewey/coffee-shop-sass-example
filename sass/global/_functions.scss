@@ -30,6 +30,12 @@
 //
 // Gets a color from the $color-definitions map
 // @param $color named color
+/**
+ * Gets a color from the $color-definitions map
+ * @requires {map} $color-definitions the color definitions map
+ * @param {color} $color - A named color that's in the map
+ * @group colors
+ */
 @function tdd-color($color) {
 	@return map-get($color-definitions, $color);
 }

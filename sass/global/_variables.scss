@@ -29,7 +29,12 @@
 //		 * dark-gray
 //	3. Assign colors for each of these keys.
 
-// Color definition map
+/**
+ * Colors used in this theme.
+ *
+ * Use `tdd-color()` to retrieve.
+ * @group colors
+ */
 $color-definitions: (
 	battlestar-red: #e1252c,
 	steel: #c0acae,
@@ -63,19 +68,62 @@ $color-definitions: (
 //			* content-width
 //	2. Uncomment usages throughout the codebase for each of these variables
 
-// Colors
+/**
+ * Alternate color
+ * @group colors
+ * @requires {function} tdd-color
+ */
 $color-alt: tdd-color(battlestar-red);
+
+/**
+ * Link color
+ * @group colors
+ * @requires {function} tdd-color
+ */
 $color-link: tdd-color(battlestar-red);
 
+/**
+ * Default text color
+ * @group colors
+ * @requires {function} tdd-color
+ */
 $color-text: tdd-color(galaxy-gray);
+
+/**
+ * Default background color
+ * @group colors
+ * @requires {function} tdd-color
+ */
 $color-background: tdd-color(very-light-gray);
 
 // Fonts
 // Antic slab is serif, Exo 2 is sans — both are from Google Fonts and loaded in <head>
+/**
+ * Default Headline font family
+ * @group fonts
+ */
 $font-family-headline: 'Antic Slab', Georgia, serif;
+
+/**
+ * Default body font family
+ * @group fonts
+ */
 $font-family-body: 'Exo 2', Exo, Futura, Helvetica Neue, Helvetica, Arial, sans-serif;
 
 // Box Model (margin, width, etc)
+/**
+ * Default font-size
+ * @group fonts
+ */
 $standard-font-size: 16px;
+
+/**
+ * Standard margin.
+ * All margins are (typically) this or .5, 1.5, or 2x this
+ */
 $standard-margin: 16px;
+
+/**
+ * Default content width
+ */
 $content-width: 800px;

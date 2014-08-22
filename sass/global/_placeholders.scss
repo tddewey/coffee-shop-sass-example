@@ -2,12 +2,15 @@
 // Placeholder Classes
 //
 
-//
-// %full-width-bar
-// Makes the block level element span the entire browser width
-// so, for example, we can have a full width color block
-// while retaining the standard content width.
-//
+/**
+ * Full Width Bar
+ *
+ * Makes the block level element span the entire browser width so,
+ * for example, we can have a full width color block
+ * while retaining the standard content width.
+ *
+ * @requires {mixin} optical-center
+ */
 %full-width-bar{
 	@include optical-center(100px);
 	margin: 0 -1000px;
@@ -15,23 +18,28 @@
 	padding-right: 1000px;
 }
 
-//
-// %header-text-treatment
-// Standard treatment for text on a dark graphic background
-// Uses text-shadow to help the letters stand out
-//
+/**
+ * Header Text Treatment
+ * Standard treatment for text on a dark graphic background
+ * Uses text-shadow to help the letters stand out
+ * @requires $color-alt
+ */
 %header-text-treatment {
 	text-shadow: 0 0 4px darken($color-alt, 30%);
 	color: #fff;
 	text-transform: uppercase;
 }
 
-//
-// %menu-table
-// Formatting for menu tables
-// Collapses borders, aligns elements
-// and provides styles for table headings
-//
+/**
+ * Menu Table
+ * Formatting for (food and drink) menu tables
+
+ * Collapses borders, aligns elements
+ * and provides styles for table headings
+ *
+ * @requires $standard-margin
+ * @requires {function} tdd-color
+ */
 %menu-table {
 	width: 100%;
 	border-collapse: collapse;
@@ -96,12 +104,15 @@
 //	2. Reset the browser list padding, set immediate child <li> elements to be inline-block and list-style-type: none
 //	3. Uncomment *all* @extend calls in the rest of the scss files
 
-//
-// %inline-list
-// Immediate child LIs are displayed inline
-// Resets padding and list styles
-// Does not affect lists nested within the inline-list
-//
+/**
+ * Makes list items inline.
+ * * Immediate child LIs are displayed inline
+ * * Resets padding and list styles
+ * * Does not affect lists nested within the inline-list
+ *
+ * Use on either an `<ol>` or `<ul>`
+ *
+*/
 %inline-list {
 	padding: 0;
 

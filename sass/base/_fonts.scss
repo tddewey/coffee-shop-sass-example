@@ -14,7 +14,12 @@
 //				2d. Create an icon mixin so that existing classes can be extended to add an icon
 //			  2e. Remove any places where the icon mixin was commented out
 
-
+/**
+ * Path to where the icomoon icon font is housed
+ * Used to make the @font-face rule a bit easier to manipulate should the directory structure need to change
+ * @access private
+ * @group fonts
+ */
 $icomoon-root: 'fonts/icomoon/fonts/icomoon';
 
 @font-face {
@@ -26,6 +31,12 @@ $icomoon-root: 'fonts/icomoon/fonts/icomoon';
 }
 
 // Contains the name of our icon and the CSS unicode map
+/**
+ * Contains the name of our icon and the CSS unicode map
+ * Use the icon to access. It's here if needed.
+ *
+ * @group fonts
+ */
 $icons: (
 	book: \e604,
 	image: \e607,
@@ -37,7 +48,19 @@ $icons: (
 	mapmarker: \e604,
 );
 
-// Icon placeholder class. Should be used on a psuedo element in conjunction with content: ''
+/**
+ * Icon placeholder class. Should be used on a psuedo element in conjunction with content: ''
+ *
+ * In fact, it shouldn't really be used at all because we have the icon mixin. However, the icon
+ * mixin uses the :before pseudo element. If you need to use :after, this will help.
+ * @example
+		.icon-coffee:after {
+			content: "#{map-get( 'coffee', $icons )}";
+			@extend %icon;
+		}
+ *
+ * @group fonts
+ */
 %icon {
 	font-family: 'icomoon';
 	speak: none;
@@ -63,6 +86,16 @@ $icons: (
 // icon
 // Extends an icon class. @extend into any selector to add an icon before it
 // @param $icon named icon from above (e.g. mapmarker)
+/**
+ * Icon Mixin
+ * Extends an icon class. Use in any selector to add an icon before it.
+ * @example
+ 	.coffee-icon {
+ 		@include icon('coffee');
+ 	}
+ * @group fonts
+ * @output this mixin simply extends a generated icon class. So this selector will be added to that icon class.
+ */
 @mixin icon($icon) {
 	@extend .icon-#{$icon};
 }

@@ -100,19 +100,22 @@
 //	2. Using the mixin definition, see if you can create a mixin.
 //	3. Uncomment usages of optical-center throughout the code
 
-// optical-center
-//
-// Provide this mixin a padding value that you might normally apply equally to
-// top and bottom padding on an element (e.g. so its contents are centered).
-//
-// It will, instead, give a bit more padding to the bottom and a bit less to the top so
-// the element appears optically centered and takes up the same amount of room.
-//
-// The amount of padding that goes to the bottom vs the top is controlled by a second
-// $ratio parameter that defaults to 1.3
-//
-// @param $padding any value that you would normally give to top and bottom padding
-// @param $ratio unitless multiplier, defaults to 1.3
+/**
+ * Optically center the contents of a block level element
+ *
+ * Provide this mixin a padding value that you might normally apply equally to
+ * top and bottom padding on an element (e.g. so its contents are centered).
+ *
+ * It will, instead, give a bit more padding to the bottom and a bit less to the top so
+ * the element appears optically centered and takes up the same amount of room.
+ *
+ * The amount of padding that goes to the bottom vs the top is controlled by a second
+ * `$ratio` parameter that defaults to 1.3
+ *
+ * @param {length} $padding any value that you would normally give to top and bottom padding
+ * @param {integer} $ratio (1.3) unitless multiplier
+ * @output `padding-bottom` and `padding-top` which will total `$padding`
+ */
 @mixin optical-center($padding, $ratio: 1.3) {
 	$padding-bottom: $padding * $ratio;
 	$padding-top: $padding;
